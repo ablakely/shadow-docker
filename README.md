@@ -13,4 +13,4 @@ Shadow Docker Image
     HTTP_PUBURL         - Public URL for WebAdmin (ex: http://10.0.0.104:1337/)
 
 # Usage
-    docker run -p 1337:1337 -e IRC_NICK=MyBot ab3800/shadow
+    docker run -d -p 1337:1337 -e IRC_NICK=MyBot ab3800/shadow
