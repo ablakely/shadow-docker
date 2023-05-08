@@ -56,6 +56,8 @@ for (my $i = 0; $i < scalar(@ARGV); $i++) {
 		$OPTS{CONTAINERNAME} = $av if ($an =~ /^container-name$/i);
 		$OPTS{HTTP_PORT} = $av if ($an =~ /^webadmin-port$/i);
 		help() if ($an =~ /^help$/i);
+
+		$i++;
 	}
 }
 
