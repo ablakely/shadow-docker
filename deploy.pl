@@ -45,17 +45,17 @@ for (my $i = 0; $i < scalar(@ARGV); $i++) {
 		my $an = $1;
 		my $av = $ARGV[$i+1];
 
-		$OPTS{IRC_NICK} = $av if ($an =~ /nick/i);
-		$OPTS{IRC_NAME} = $av if ($an =~ /name/i);
-		$OPTS{IRC_HOST} = $av if ($an =~ /server|host/i);
+		$OPTS{IRC_NICK} = $av if ($an =~ /^nick$/i);
+		$OPTS{IRC_NAME} = $av if ($an =~ /^name$/i);
+		$OPTS{IRC_HOST} = $av if ($an =~ /^host$/i);
 		$OPTS{IRC_PORT} = $av if ($an =~ /^port$/i);
-		$OPTS{IRC_ADMINHOSTS} = $av if ($an =~ /adminhosts/i);
-		$OPTS{IRC_CHANS} = $av if ($an =~ /chans/i);
-		$OPTS{IRC_CMDCHAN} = $av if ($an =~ /cmdchan/i);
-		$OPTS{HTTP_PUBURL} = $av if ($an =~ /puburl/);
-		$OPTS{CONTAINERNAME} = $av if ($an =~ /container-name/i);
-		$OPTS{HTTP_PORT} = $av if ($an =~ /webadmin-port/i);
-		help() if ($an =~ /help/i);
+		$OPTS{IRC_ADMINHOSTS} = $av if ($an =~ /^adminhosts$/i);
+		$OPTS{IRC_CHANS} = $av if ($an =~ /^chans$/i);
+		$OPTS{IRC_CMDCHAN} = $av if ($an =~ /^cmdchan$/i);
+		$OPTS{HTTP_PUBURL} = $av if ($an =~ /^puburl$/);
+		$OPTS{CONTAINERNAME} = $av if ($an =~ /^container-name$/i);
+		$OPTS{HTTP_PORT} = $av if ($an =~ /^webadmin-port$/i);
+		help() if ($an =~ /^help$/i);
 	}
 }
 
