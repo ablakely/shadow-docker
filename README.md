@@ -1,7 +1,7 @@
 # shadow-docker
-Shadow Docker Image
+[Shadow](https://github.com/ablakely/shadow) Docker Image
 
-# Enviornment Overrides Variables
+# Enviornment Override Variables
 
     IRC_HOST            - IRC Server Host
     IRC_PORT            - IRC Server Port
@@ -16,7 +16,8 @@ Shadow Docker Image
     docker run -d -p 1337:1337 -e IRC_NICK=MyBot ab3800/shadow
 
 # deploy.pl
-
+    Usage: ./deploy.pl [opts]
+    
     Config Options:
 	    --nick			- IRC nick
 	    --name			- IRC name
@@ -24,6 +25,6 @@ Shadow Docker Image
 	    --port			- IRC server port
 	    --adminhosts		- IRC admin hostnames (ex: *!*@domain.tld,*!ab@ex.co)
 	    --chans			- IRC channels (ex: #lobby,#bots,#shaow)
-	    --cmdchan		- IRC logging channel
-	    --puburl		- Web Admin public URL (ex http://hostname:port/)
-	    --container-name	- Docker container name
+	    --cmdchan			- IRC logging channel
+	    --puburl			- Web Admin public URL (ex http://hostname:port/)
+	    --container-name		- Docker container name
