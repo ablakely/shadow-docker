@@ -11,7 +11,7 @@
     IRC_CMDCHAN         - Logging Channel
     IRC_ADMINHOSTS      - List of Admin Hostmasks (ex: *!*@staff.example.org)
     HTTP_PUBURL         - Public URL for WebAdmin (ex: http://10.0.0.104:1337/)
-    HTTP_PORT		- HTTP server port
+    HTTP_PORT           - HTTP server port
 
 # Usage
     docker run -d -p 1337:1337 -e IRC_NICK=MyBot ab3800/shadow
