@@ -27,7 +27,7 @@ if (scalar(@ARGV) == 0) {
 	print "\t--adminhosts\t\t- IRC admin hostnames (ex: *!*\@domain.tld,*!ab\@ex.co)\n";
 	print "\t--chans\t\t\t- IRC channels (ex: #lobby,#bots,#shaow)\n";
 	print "\t--cmdchan\t\t- IRC logging channel\n";
-	print "\t--webadmin-port\t- Web Admin HTTP server port\n";
+	print "\t--webadmin-port\t\t- Web Admin HTTP server port\n";
 	print "\t--puburl\t\t- Web Admin public URL (ex http://hostname:port/)\n";
 	print "\t--container-name\t- Docker container name\n\n";
 	exit;
