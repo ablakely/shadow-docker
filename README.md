@@ -1,7 +1,7 @@
 # shadow-docker
 Shadow Docker Image
 
-# Enviornment Overrides Variables
+# Enviornment Override Variables
 
     IRC_HOST            - IRC Server Host
     IRC_PORT            - IRC Server Port
