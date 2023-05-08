@@ -16,9 +16,10 @@ $OPTS{IRC_CMDCHAN}    = "#shadowcmd";
 $OPTS{CONTAINERNAME}  = "shadow";
 $OPTS{HTTP_PORT}      = 1337;
 
-if (scalar(@ARGV) == 0) {
+sub help {
 	print "Usage: $0 [OPTS]\n";
 	print "Deploys shadow with docker\n\n";
+	
 	print "Config Options:\n";
 	print "\t--nick\t\t\t- IRC nick\n";
 	print "\t--name\t\t\t- IRC name\n";
@@ -31,6 +32,10 @@ if (scalar(@ARGV) == 0) {
 	print "\t--puburl\t\t- Web Admin public URL (ex http://hostname:port/)\n";
 	print "\t--container-name\t- Docker container name\n\n";
 	exit;
+}
+
+if (scalar(@ARGV) == 0) {
+	help();
 }
 
 for (my $i = 0; $i < scalar(@ARGV); $i++) {
@@ -50,6 +55,7 @@ for (my $i = 0; $i < scalar(@ARGV); $i++) {
 		$OPTS{HTTP_PUBURL} = $av if ($an =~ /puburl/);
 		$OPTS{CONTAINERNAME} = $av if ($an =~ /container-name/i);
 		$OPTS{HTTP_PORT} = $av if ($an =~ /webadmin-port/i);
+		help() if ($an =~ /help/i);
 	}
 }
 
