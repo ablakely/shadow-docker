@@ -28,3 +28,4 @@
 	    --cmdchan			- IRC logging channel
 	    --puburl			- Web Admin public URL (ex http://hostname:port/)
 	    --container-name		- Docker container name
+	    --webadmin-port		- Web Admin HTTP port
