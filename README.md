@@ -14,3 +14,16 @@ Shadow Docker Image
 
 # Usage
     docker run -d -p 1337:1337 -e IRC_NICK=MyBot ab3800/shadow
+
+# deploy.pl
+
+    Config Options:
+	    --nick			- IRC nick
+	    --name			- IRC name
+	    --host			- IRC server host
+	    --port			- IRC server port
+	    --adminhosts		- IRC admin hostnames (ex: *!*@domain.tld,*!ab@ex.co)
+	    --chans			- IRC channels (ex: #lobby,#bots,#shaow)
+	    --cmdchan		- IRC logging channel
+	    --puburl		- Web Admin public URL (ex http://hostname:port/)
+	    --container-name	- Docker container name
