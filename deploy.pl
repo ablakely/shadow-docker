@@ -71,7 +71,7 @@ foreach my $k (keys %OPTS) {
 	$dexec .= " -e $k=\"".$OPTS{$k}.'"';
 }
 
-$dexec .= " --name ".$OPTS{CONTAINERNAME}." ab3800/shadow";
+$dexec .= " --name ".$OPTS{CONTAINERNAME}." ab3800/shadow:latest";
 
 
 print "$dexec\n";
